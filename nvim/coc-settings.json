@@ -22,8 +22,7 @@
   "suggest.noselect": false,
   "snippets.ultisnips.usePythonx": false,
   "snippets.extends": {
-    "javascriptreact": ["javascript"],
-    "typescript": ["javascript"]
+    "javascriptreact": ["javascript"]
   },
   "list.normalMappings": {
     "<C-c>": "do:exit"

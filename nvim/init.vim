@@ -53,6 +53,8 @@ set shortmess+=c
 set splitbelow splitright
 
 
+
+
 ">>>>>>>>>>>>>>>PLUGINS MANAGMENT<<<<<<<<<<<<
 call plug#begin('~/.vim/plugged')
 
@@ -64,8 +66,8 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 "AutoComplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'ycm-core/YouCompleteMe'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install', 'for': ['json', 'lua', 'vim', ]}
+Plug 'ycm-core/YouCompleteMe'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 
@@ -137,7 +139,7 @@ nmap <Leader>c :e /home/admin/.config/nvim/init.vim<CR>
 
 ">>>>>>>>>>>>>>>>>TERMINAL MANGMENT<<<<<<<<<<<<<<<<<
 "Terminal Remaps
-nmap <C-t> :vsplit+terminal<CR>
+nmap <C-t> :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
 tnoremap <Leader>c <C-\><C-n><C-w><C-q>
