@@ -66,8 +66,9 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 "AutoComplete
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install', 'for': ['json', 'lua', 'vim', ]}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install', 'for': ['json', 'lua', 'vim', 'html','css']}
 Plug 'ycm-core/YouCompleteMe'
+let g:ycm_filetype_blacklist = {'html': 1,'css':1}
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 
@@ -108,10 +109,10 @@ nmap <C-S-Left> :bp<CR>
 nmap <Leader>s :w<CR>
 
 ">>>>>>>>>>>>>>>>>>>>>>>NO ARROW REMAPS<<<<<<<<<<<<<<<<<<<<
-nmap <Up> :res +1<Cr> 
-nmap <Down> :res -1<Cr> 
-nmap <Left> :vertical resize -1<Cr> 
-nmap <Right> :vertical resize +1<Cr> 
+"nmap <Up> :res +1<Cr> 
+"nmap <Down> :res -1<Cr> 
+"nmap <Left> :vertical resize -1<Cr> 
+"nmap <Right> :vertical resize +1<Cr> 
 
 ">>>>>>>>>>>>>>>>>>>>>>FILE MANGMENT<<<<<<<<<<<<<<<<<<<<<<<<
 nmap <C-n> :NERDTreeToggle<CR>
