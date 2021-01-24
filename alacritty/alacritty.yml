@@ -3,13 +3,13 @@ colors:
   # Default colors
   primary:
     # hard contrast: background = '#1d2021'
-    background: '#0f0f0f'
+    background: '#1D1F21'
     # soft contrast: background = '#32302f'
     foreground: '#909090'
   cursor:
     text: '#000000'
-    cursor: '#ffffff'
-  
+    cursor: '#cccccc'
+
 
   # Normal colors
   normal:
@@ -33,10 +33,11 @@ colors:
     cyan:    '#8ec07c'
     white:   '#ebdbb2'
 
+background_opacity: 0.9
 # Font configuration (changes require restart)
 font:
   # The size to use.
-  size: 10
+  size: 9.5
   # The normal (roman) font face to use.
   normal:
     family: Hack
