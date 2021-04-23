@@ -1,12 +1,13 @@
 #!/bin/bash
-xinput set-prop 13 "Device Enabled" 0
-xinput set-prop 12 "Device Enabled" 0
-xinput set-prop 10 "Device Enabled" 0
+#xinput set-prop 13 "Device Enabled" 0
+#xinput set-prop 12 "Device Enabled" 0
+#xinput set-prop 10 "Device Enabled" 0
 
 #polybar
 $HOME/.config/polybar/launch.sh --shapes
 
 #compositor (Gives transparency in window manager)
+kdeconnect-cli -l
 picom 
 
 #hide mouse cursor if its not in use for more that 1s

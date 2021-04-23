@@ -42,10 +42,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec dmenu_run
+bindsym $mod+Return exec dmenu_run -h 30 -nb "#323A46" -sb "#B14438" -p "Run: " 
 bindsym $mod+t exec alacritty -e tmux
 bindsym $mod+Shift+t exec alacritty -e tmux kill-server
-bindsym $mod+Shift+Return exec alacritty -e tmux a
+bindsym $mod+Shift+Return exec ~/.config/i3/terminal.sh
 
 
 # kill focused window
@@ -57,10 +57,14 @@ bindsym $mod+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+semicolon split h 
+
+#trackma anilist
+bindsym $mod+z exec trackma-gtk
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -81,7 +85,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h 
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -192,34 +196,41 @@ smart_borders no_gaps
 hide_edge_borders 1
 
 #Start htop on mod+m
-bindsym $mod+m exec alacritty -e htop
+bindsym $mod+m exec alacritty -e gotop
+bindsym $mod+Shift+m exec alacritty -e htop
 
 #Firefox keybinding
-bindsym $mod+b exec firefox
+bindsym $mod+Shift+b exec epiphany
 
 #Start brave i incognito mode
-bindsym $mod+Shift+b exec incognito
+bindsym $mod+b exec brave
 
 #i3lock
-bindsym $mod+p exec i3lock -c 000000 -e -f -p win
+bindsym $mod+p exec i3lock -c 000000 -e -f
+bindsym $mod+Shift+p exec alacritty -e tclock
 
 #Start ranger in alacritty
 bindsym $mod+e exec $terminal -e ranger
 
 #Start pcmanfm
-bindsym $mod+Shift+e exec "pcmanfm"
+bindsym $mod+Shift+e exec "pcmanfm-qt"
 
 #background in window manager
 exec_always "nitrogen --restore &"
+exec_always "python ~/.config/youtube-local/server.py"
 
 #Start htop on startup
-exec $terminal -e htop
+exec $terminal -e gotop
 
 #brightness to 60%
 exec_always xbacklight -set 30
 
 #Touchpad disable command on reload or startup
 exec_always --no-startup-id ~/.config/i3/startup
+#exec_always --no-startup-id "kdeconnect-app"
 
 #Always open mplayer in floating window.
 for_window [class="MPlayer" instance="xv"] floating enable; exec i3-msg resize set width 600px;
+for_window [class="ksnip" instance="screenshot"] floating enable;
+for_window [class="listen.moe-desktop-app" instance="listen.moe-desktop-app"] floating enable;
+for_window [class="Io.github.celluloid_player.Celluloid" instance="io.github.celluloid_player.Celluloid"] floating enable; exec i3-msg resize set width 600px;

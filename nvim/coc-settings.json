@@ -31,7 +31,7 @@
     "<C-c>": "do:exit"
   },
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "typescript", "javascriptreact"],
+  "eslint.filetypes": ["typescript", "javascriptreact"],
   "python.formatting.provider": "black",
   "markdownlint.config": {
     "default": true,

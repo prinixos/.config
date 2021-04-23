@@ -1,0 +1,20 @@
+"Leader Key
+let mapleader = " "
+"BUFFERS
+nmap <Leader>x :bd!<CR>
+nmap <C-S-Right> :bn<CR>
+nmap <C-S-Left> :bp<CR>
+"FILE MANAGER
+nmap <C-e> :Explore<CR>
+"NVIM
+nmap <C-S> :source /home/admin/.config/nvim/init.vim<CR> 
+nmap <Leader>c :e /home/admin/.config/nvim/init.vim<CR>
+"TELESCOPE
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+"PRETTIER
+nmap <M-f> :Neoformat<CR>
+"UNDOTREE
+noremap <C-x> <leader>c<space><CR>
