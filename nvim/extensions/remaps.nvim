@@ -16,5 +16,9 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "PRETTIER
 nmap <M-f> :Neoformat<CR>
-"UNDOTREE
-noremap <C-x> <leader>c<space><CR>
+"Git
+nmap <leader>g<right> :diffget //3<CR>
+nmap <leader>g<left> :diffget //2<CR>
+nmap <leader>g<space> :G<CR>
+nmap <leader>g<down> :Git commit<CR>
+nmap <leader>g<up> :Git push<CR>

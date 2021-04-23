@@ -58,9 +58,11 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
-nmap <leader>gr :diffget //3<CR>
-nmap <leader>gl :diffget //2<CR>
-nmap <leader>gs :G<CR>
+nmap <leader>g<right> :diffget //3<CR>
+nmap <leader>g<left> :diffget //2<CR>
+nmap <leader>g<space> :G<CR>
+nmap <leader>g<down> :Git commit<CR>
+nmap <leader>g<up> :Git push<CR>
 
 source ~/.config/nvim/extensions/indentLine.nvim
 source ~/.config/nvim/extensions/md.nvim
