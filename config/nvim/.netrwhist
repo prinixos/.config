@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/admin/.vim/plugged/telescope.nvim/plugin'
+let g:netrw_dirhist_1='/home/admin/.vim/plugged/telescope.nvim'
+let g:netrw_dirhist_0='/home/admin/.vim/plugged'
+let g:netrw_dirhist_9='/home/admin/.vim'
+let g:netrw_dirhist_8='/home/admin'
+let g:netrw_dirhist_7='/home'
+let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_5='/home'
+let g:netrw_dirhist_4='/home/admin'
+let g:netrw_dirhist_3='/home/admin/Desktop'
