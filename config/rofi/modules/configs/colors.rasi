@@ -1,0 +1,10 @@
+* {
+    accent:             #5E7EC4;
+  /* accent:           #15747F; Demons Slayer*/
+  /* accent:           #A9C03F; Attack On Titan*/
+  background:       #141c21;
+  background-light: #1C252A;
+  foreground:       #93a1a1;
+  on:               #5BB462;
+  off:              #DE635E;
+}

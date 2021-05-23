@@ -127,6 +127,7 @@ exec_always --no-startup-id ~/.config/i3/startup.sh
 
 #Window setting
 for_window [class="MPlayer" instance="xv"] floating enable; exec i3-msg resize set width 600px;
+for_window [class="mpv" instance="gl"] floating enable; exec i3-msg resize set width 600px;
 for_window [class="ksnip" instance="screenshot"] floating enable;
 for_window [class="listen.moe-desktop-app" instance="listen.moe-desktop-app"] floating enable;
 for_window [class="Io.github.celluloid_player.Celluloid" instance="io.github.celluloid_player.Celluloid"] floating enable; exec i3-msg resize set width 600px;

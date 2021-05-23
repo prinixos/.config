@@ -1,16 +1,30 @@
-Run the following command on fresh installation
+"   ___
+"  |  _ \  _ __ (_) _ __  (_)__  __ ___   ___
+"  | |_) || '__|| || '_ \ | |\ \/ // _ \ / __|
+"  |  __/ | |   | || | | || | >  <| (_) |\__ \
+"  |_|    |_|   |_||_| |_||_|/_/\_\\___/ |___/
+"
+"  Github :: https://github.com/prinixos
+
+Nvim needs some modules to run these are the following modules
+
 sudo python3 -m pip install --user --upgrade pynvim
 sudo python2 -m pip install --user --upgrade pynvim
 sudo npm install -g neovim
 sudo npm install -g browser-sync
+
  Add the following line in alacritty.yml config for commenting mapping <C-/>
  - { key: Slash,    mods: Control,       chars: "gc"              }
+
 LIVE SERVER :
 FOR LINUX ONLY ~/.bashrc CONFIGURATION:
+
 # browser-sync config
 # Get the current local IP address
 export SERVER_IP=`hostname -I`
+
 # The command alias to start the browser-sync server
-alias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 9000"
+alias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 3000"
+
 START LIVESERVER COMMAND
- browser-sync start --server --files .
+browser-sync start --server --files .

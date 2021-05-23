@@ -7,7 +7,7 @@
 #  Github :: https://github.com/prinixos
 
 #!/bin/bash
-xbacklight -set 30 &
+xbacklight -set 20 &
 $HOME/.config/polybar/launch.sh --shapes &
 nitrogen --restore &
 dunst &
@@ -17,3 +17,4 @@ unclutter --timeout 1 &
 kdeconnect-cli -l &
 alacritty -e gotop &
 python ~/.config/youtube-local/server.py &
+telegram-desktop &
