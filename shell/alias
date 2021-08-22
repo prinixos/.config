@@ -1,0 +1,46 @@
+alias c="clear"
+alias r="ranger"
+alias ls="exa --oneline"
+alias l="exa --all"
+alias la="exa -la"
+alias tree="exa --tree"
+alias x="exit"
+alias nano="nvim"
+alias n="cd && clear"
+alias cat="bat"
+alias dmenu="env LC_ALL=en_US.UTF-8 dmenu_run"
+alias dmenu_run="env LC_ALL=en_US.UTF-8 dmenu_run"
+alias vim="nvim"
+alias nano="nvim"
+alias e="nvim"
+alias kill='killall -q'
+alias weather='clear && curl wttr.in'
+alias grep="rg"
+alias dl="youtube-dl -f best "
+alias youtube-local='python ~/.config/youtube-local/server.py'
+alias unsl="alacritty -e sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target"
+alias sl="alacritty -e sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target"
+alias live="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 3000"
+alias mal="python ~/prinix/git/ALExport/AniListExport.py"
+alias incognito="brave --incognito"
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#readable output
+alias df='df -h'
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias wget="wget -c"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# PTSH
+alias ls='ptLs'
+alias la='ptLs -la'
+alias l='ptLs -l'
+alias pwd='ptPwd'
+alias mkdir='ptMkdir'
+alias touch='ptTouch'
+alias cp='ptCp'
+alias rm='ptRm'
